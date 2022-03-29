@@ -1,0 +1,29 @@
+package com.rangga.controllers;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.rangga.services.EmployeeService;
+
+@RestController
+public class EmployeeController {
+	
+	@Autowired
+	private EmployeeService es;
+	
+	@GetMapping("all")
+	public List<Map<String, Object>> listEmployee(){
+		return es.listEmployee();
+	}
+	
+	@PostMapping("/post")
+	public int insert(String nama,String jenis_kelamin,String telephone) {
+		return es.insertData(nama, jenis_kelamin, telephone);
+	}
+
+}
