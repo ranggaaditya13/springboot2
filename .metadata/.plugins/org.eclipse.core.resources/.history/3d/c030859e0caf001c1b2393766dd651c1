@@ -1,5 +1,0 @@
-package com.rangga.repositories;
-
-public interface EmployeeRepository {
-
-}
