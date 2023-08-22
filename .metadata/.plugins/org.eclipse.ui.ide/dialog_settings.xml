@@ -33,4 +33,9 @@
 		<item value="org.sonatype.m2e.egit.feature:0.15.1.201806191431"/>
 		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.2.201606141937-signed-20160830073346"/>
 	</list>
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\Springboot\Project\springboot2\CompanyWeb"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+	</section>
 </section>
